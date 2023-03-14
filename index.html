@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.ga{
+    border: 1px solid black;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+.table{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+.flexblack{
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    background:url(https://onlinecasino-place.com/wp-content/uploads/2020/03/Blackjack4-1024x576.jpg)center;
+  color:white;
+}
+.buttonsection{
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#yourbox{
+    padding-left: 145px;
+    border: 2px solid black;
+    padding-right: 215px;
+}
+#botbox{
+    padding-left: 30px;
+}
+.flexblack div{
+    padding: 10px;
+    height: 350px;
+    text-align: center;
+    flex: 1;
+}
+.flexblack img{
+    width: 25%;
+    padding: 10px;
+}
+#pop{
+    width: 70px;
+    height: 70px;
+}
+#po{
+    margin-top: 30px;
+    width: 70px;
+    height: 70px;
+}
+</style>
+<body>
+    <div class="ga">
+        <h1>BlackJack</h1>
+        <h3 id="display">Let's Play</h3>
+        <div class="flexblack">
+            <div id="yourbox">
+                <h2>Player 1 : <span id="score1">0</span></h2>
+                <div id = "player1cards"></div>
+            </div>
+            <div id="botbox">
+            <h2>Player 2 : <span id="score2">0</span></h2>
+            <div id = "player2cards"></div>
+            </div>
+        <div class="buttonsection"></div>
+        </div>
+        <button id="btn1" onclick="hit()">Hit</button>
+        <button id="btn2" onclick="stand()">Stand</button>
+        <button id="btn3" onclick="deal()">Deal</button>
+    </div>
+    <div class = table>
+    </div>
+</body>
+<script src="js34.js"></script>
+</html>
